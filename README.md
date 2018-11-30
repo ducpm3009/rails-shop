@@ -5,7 +5,7 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version : default 
 
 * System dependencies
 
@@ -21,4 +21,10 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+* 
+
+On your gemfile: gem 'rails_admin', '~> 1.3'
+Run bundle install
+Run rails g rails_admin:install
+Provide a namespace for the routes when asked (set default as /admin)
+Restart server rails s and administer your data at /admin 
